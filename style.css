@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+#heading {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#heading h1 {
+    font-size: 3rem;
+}
+
+#heading span {
+    font-size: 3rem;
+}
+
+#inputSec #inputItems {
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#inputItems input {
+    height: 80px;
+    width: 80%;
+    border-radius: 20px 0px 0px 20px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 5px;
+    color: purple;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#inputItems button {
+    height: 80px;
+    width: 20%;
+    border-radius: 0px 20px 20px 0px;
+    font-size: 1.5rem;
+    background-color: orange;
+}
+
+#todoCont {
+    padding: 10px;
+    font-size: 1.5rem;
+    list-style: none;
+    font-weight: 600;
+}
+
+#todoCont li {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    background-color: purple;
+    color: white;
+    position: relative;
+}
+
+#todoCont li span {
+    position: absolute;
+    right: 20px;
+}
+
+#todoCont li span:hover {
+    scale: 2;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+    #main {
+        border: 2px solid black;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container {
+        min-width: 500px;
+        border: 2.5px solid purple;
+        border-radius: 20px;
+        box-shadow: 10px 5px 20px purple;
+    }
+}
